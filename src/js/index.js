@@ -11,5 +11,7 @@ import "../styles/index.scss";
 //import your own components
 import Layout from "./layout";
 
+import { InputList } from "./component/inputList.js";
+
 //render your react application
-ReactDOM.render(<Layout />, document.querySelector("#app"));
+ReactDOM.render(<InputList />, document.querySelector("#app"));
