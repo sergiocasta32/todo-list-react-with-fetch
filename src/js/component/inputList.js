@@ -23,23 +23,6 @@ export class InputList extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch("https://assets.breatheco.de/apis/fake/todos/user/sergiocasta", {
-			method: "GET",
-			headers: {
-				"content-type": "application/json"
-			}
-		})
-			.then(res => res.json())
-			.then(response => {
-				setList(
-					response.map((item, index) => {
-						return item; 
-					})
-				);
-			});
-	}
-
-	componentDidMount() {
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/sergiocasta")
 			.then(response => response.json(), console.log("succes"))
 			.then(data => {
