@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const List = ({ lista, onDeleteClicked, counter }) => {
-	const listaa = lista.map((elemento, index) => {
+	const todoList = lista.map((elemento, index) => {
 		if (elemento.done === true) {
 			return (
 				<li className="todos" key={index}>
@@ -14,7 +14,7 @@ const List = ({ lista, onDeleteClicked, counter }) => {
 	});
 	return (
 		<ul>
-			{listaa}
+			{todoList}
 			{counter}
 		</ul>
 	);
