@@ -33,7 +33,7 @@ export class InputList extends React.Component {
 			.then(response => {
 				setList(
 					response.map((item, index) => {
-						return item; //el map siempre debe llevar un                          return
+						return item; 
 					})
 				);
 			});
