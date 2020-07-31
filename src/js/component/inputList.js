@@ -23,7 +23,7 @@ export class InputList extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch("https://assets.breatheco.de/apis/fake/todos/user/tozzigh")
+		fetch("https://assets.breatheco.de/apis/fake/todos/user/sergiocasta")
 			.then(response => response.json(), console.log("succes"))
 			.then(data => {
 				for (let z in data) {
@@ -32,7 +32,7 @@ export class InputList extends React.Component {
 			});
 	}
 	componentDidUpdate() {
-		fetch("https://assets.breatheco.de/apis/fake/todos/user/tozzigh", {
+		fetch("https://assets.breatheco.de/apis/fake/todos/user/sergiocasta", {
 			method: "PUT",
 			headers: { "content-type": "application/json" },
 			body: JSON.stringify(this.state.lista)
