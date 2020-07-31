@@ -26,8 +26,8 @@ export class InputList extends React.Component {
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/sergiocasta")
 			.then(response => response.json(), console.log("succes"))
 			.then(data => {
-				for (let z in data) {
-					this.setState({ lista: [...this.state.lista, data[z]] });
+				for (let i in data) {
+					this.setState({ lista: [...this.state.lista, data[i]] });
 				}
 			});
 	}
